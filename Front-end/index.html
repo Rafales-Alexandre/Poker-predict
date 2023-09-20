@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Odds Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Center cards (Community cards) -->
+        <div class="center-cards">
+            <div class="card center-card locked"></div>
+            <div class="card center-card locked"></div>
+            <div class="card center-card locked"></div>
+            <div class="card center-card turn locked"></div>
+            <div class="card center-card river locked"></div>
+        </div>
+
+        <!-- Player cards -->
+        <div class="player-cards">
+            <div class="card bottom-card empty"></div>
+            <div class="card bottom-card empty"></div>
+        </div>
+        <div class="winning-percentage"></div>
+
+        <div class="O1-cards">
+            <div class="card bottom-card empty"></div>
+            <div class="card bottom-card empty"></div>
+        </div>
+        <div class="O2-cards">
+            <div class="card bottom-card empty"></div>
+            <div class="card bottom-card empty"></div>
+        </div>
+    </div>
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="deck">
+                <!-- Cards will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="calculateOddsBtn">Calculate Odds</button>
+    </div>
+    <button id="resetBtn">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
